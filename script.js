@@ -54,10 +54,11 @@ function playGame(playerMove) {
         .innerHTML = `${result}`;
 
     document.querySelector('.js-moves')
-        .innerHTML = `You
-        <img class="css-img" src="./Images/${playerMove}-emoji.png" alt="">
-        <img class="css-img" src="./Images/${computerMove}-emoji.png" alt="">
-        Computer`;
+        .innerHTML = 'You' +
+    '<img class="css-img" src="./Images/' + playerMove + '-emoji.png" alt="">' +
+    '<img class="css-img" src="./Images/' + computerMove + '-emoji.png" alt="">' +
+    'Computer';
+
 
     if(result === 'You Won')  {
         score.wins += 1;
